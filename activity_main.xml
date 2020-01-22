@@ -1,0 +1,110 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:autoLink="web"
+        android:text="HOME AUTHENTICATION SYSTEM"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/ipaddressText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Server IP Address" />
+
+    <EditText
+        android:id="@+id/portText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Server Port Number" />
+
+    <Button
+        android:id="@+id/connectionbutton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Connect to the server..." />
+
+    <Button
+        android:id="@+id/clearbutton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Clear" />
+
+    <TextView
+        android:id="@+id/responseTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_width="fill_parent">
+
+        <ImageView
+            android:id="@+id/testimageview"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_weight="1"
+            android:src="@android:drawable/alert_dark_frame" />
+
+        <TextView
+            android:id="@+id/imagedetails"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_weight="1"
+            android:text="Details" />
+
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/displaydetails"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Display details" />
+
+    <EditText
+        android:id="@+id/authentication"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Would you like to authenticate the person?" />
+
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_width="fill_parent">
+
+        <Button
+            android:id="@+id/nobutton"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="No" />
+
+        <Button
+            android:id="@+id/yesbutton"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Yes" />
+    </LinearLayout>
+
+
+</LinearLayout>
